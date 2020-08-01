@@ -1,5 +1,5 @@
 @font-face { 
-    font-family: "futura-bold";
+    font-family: "futura-bold";  
     src: url("../../fonts/futura-bold.woff2") format("woff2"),
 		 url("../../fonts/futura-bold.woff") format("woff");
     font-weight: bold;
@@ -7,9 +7,13 @@
 }
 
 @font-face { 
-    font-family: FuturaMediumC;
+    font-family: FuturaMediumC; 
     src: url("../../fonts/FuturaMediumC.woff2") format("woff2"),
 		 url("../../fonts/FuturaMediumC.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
+
+// Название шрифтов в font-family лучше писать в кавычках
+// Семейство шрифтов одно - Futura, но разные начернатия, поэтому значение font-family должно быть одним - "Futura" 
+// значение font-weight лучше писать цыфрами  
