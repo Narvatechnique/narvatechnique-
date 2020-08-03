@@ -1,14 +1,16 @@
 @font-face {
     font-family: 'Futura';
-    src: url('file:///C:\Users\oloer\Desktop\Helloepta\narvatechnique-\src\fonts\futura-bold.woff') format('woff');
+    src: url('file:///C:\Users\...\Desktop\...\narvatechnique-\src\fonts\futura-bold.woff') format('woff'), 
+        url('file:///C:\Users\...\Desktop\...\narvatechnique-\src\fonts\futura-bold.woff2') format('woff2');
     font-weight: 700;
     font-display: swap;
     font-style: italic;
 }
 @font-face {
     font-family: 'Futura';
-    src: url('file:///C:\Users\oloer\Desktop\Helloepta\narvatechnique-\src\fonts\futura-bold.woff2') format('woff2');
-    font-weight: 700;
+    src: url('file:///C:\Users\...\Desktop\...\narvatechnique-\src\fonts\FuturaMediumC.woff') format('woff'), 
+        url('file:///C:\Users\...\Desktop\...\narvatechnique-\src\fonts\FuturaMediumC.woff2') format('woff2');
+    font-weight: 400;
     font-display: swap;
     font-style: normal;
 }
