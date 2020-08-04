@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Futura';
-    src: url('file:///C:\Users\...\Desktop\...\narvatechnique-\src\fonts\futura-bold.woff') format('woff'), 
+    src: url('../../fonts/futura-bold.woff') format('woff'), 
         url('file:///C:\Users\...\Desktop\...\narvatechnique-\src\fonts\futura-bold.woff2') format('woff2');
     font-weight: 700;
     font-display: swap;
@@ -14,3 +14,6 @@
     font-display: swap;
     font-style: normal;
 }
+
+// Путь к файлам шрифта пишем относительно этого файла, т.е 
+// ../../fonts/futura-bold.woff2 ../ означает, что мы выходим на 1 папку вверх, то есть, если сейчас в папке base то выйдем в папку style и так пока не дойдем до файла
