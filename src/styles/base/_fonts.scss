@@ -5,7 +5,7 @@
 	font-display: swap;
 	font-weight: 700;
 	font-style: normal;
-
+}
 @font-face {
 	font-family: "Futura"
 	src: url("D:/Desktop/git_exercise/src/fonts/FuturaMediumC.woff2") format("woff2"),
@@ -13,4 +13,7 @@
 	font-display: swap;
 	font-weight: 400;
 	font-style: normal;
-	
+}
+
+// Путь к файлам шрифта пишем относительно этого файла, т.е 
+// ../../fonts/futura-bold.woff2 ../ означает, что мы выходим на 1 папку вверх, то есть, если сейчас в папке base то выйдем в папку style и так пока не дойдем до файла
