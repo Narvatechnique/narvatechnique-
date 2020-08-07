@@ -3,3 +3,9 @@
 	align-items: center;
 	justify-content: center;
 }
+
+@mixin font-weight-size_line-height ($fweight, $fsize, $lheight) {
+	font-weight: $fweight;
+	font-size: $fsize;
+	line-height: $lheight;
+}
