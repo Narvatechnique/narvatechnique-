@@ -1,5 +1,5 @@
 @fontface{
-  font-family: 'Futura Bold';
+  font-family: 'Futura';
   src: url("..\src\fonts\futura-bold.woff") format("woff"),
   url("..\src\fonts\futura-bold.woff2") format("woff2") ;
   font-display: swap;
@@ -7,10 +7,9 @@
   font-style: normal;
 }
 @fontface{
-  font-family: 'Futura Medium';
+  font-family: 'Futura';
   src: url("..\src\fonts\FuturaMediumC.woff") format("woff"),
   url("..\src\fonts\FuturaMediumC.woff2") format("woff2") ;
   font-weight: 400;
   font-style: normal;
 }
-// шрифт один и тот же, только разные начертания, поэтому font-family должно быть везде одно: 'Futura'
