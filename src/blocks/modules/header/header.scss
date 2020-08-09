@@ -1,66 +1,58 @@
 .header {
 	&__body {
-		position: absolute;
-		width: 1652 / 1920 * 100%;
-		height: 54px; // [54 / 2600 * 100%]
-		left: 133 / 1920 * 100%;
-		top: 66 / 2600 * 100%;
 		display: flex;
-		flex-wrap: nowrap;
-		font-family: Futura;
-}
-
-	&__name {
-		@include disp-flex-center;
-		@include font-weight-size_line-height(500, 35px, 46px);
+		margin-bottom: 60px;
 	}
 
-	&__main {
-		@include disp-flex-center;
-		@include font-weight-size_line-height(500, 20px, 26px);
-		margin-left: 125 / 1652 * 100%;
-		letter-spacing: 0.02em;
+	&__title {
+		margin: auto 100px auto 0px;
+		font-weight: 500;
+		font-size: 35px;
 	}
 
-	&__shop {
-		@include disp-flex-center;
-		@include font-weight-size_line-height(500, 20px, 26px);
-		margin-left: 40 / 1652 * 100%;
-		letter-spacing: 0.02em;
+	&__nav {
+		margin: auto 0px;
+	}
+
+	&__list {
+		display: flex;
+		font-weight: 500;
+		font-size: 20px;
+	}
+
+	&__list-item {
+		margin: 0px 20px;
+	}
+
+	&__cart-block {
+		display: flex;
+
+		// like in scheme
+		margin: auto 0px auto 830px;
+
+		// it is suitable for my screen resolution
+		// margin: auto 0px auto auto;
+		font-weight: 500;
+		font-size: 20px;
 	}
 
 	&__counter {
-		@include disp-flex-center;
-		@include font-weight-size_line-height(500, 20px, 20px);
-		margin-left: auto;
-		margin-right: 21 / 1652 * 100%;
+		margin: auto 20px auto 0px;
+		padding: 15px 20px;
+		background-color: #000;
+		color: #FFF;
 		border-radius: 50%;
-		height: 49px;
-		width: 49px;
-		background-color: black;
-		text-align: center;
-		color: white;
-		letter-spacing: -0.03em;
 	}
 
 	&__bucket {
-		@include disp-flex-center;
-		@include font-weight-size_line-height(500, 20px, 20px);
 		border: 3px solid #000;
 		border-radius: 30px;
-		padding: 16px 42px;
-		box-sizing: border-box;
-		letter-spacing: -0.03em;
+		padding: 15px 40px;
 	}
 }
 
-.link {
-	color: #000;
-	text-decoration: none;
-}
-
 .link_active {
-	color: #000;
 	font-weight: bold;
-	text-decoration: underline #F00;
+	border-bottom: 3px solid #F00;
+	padding-bottom: 5px;
 }
