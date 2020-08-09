@@ -1,0 +1,95 @@
+.header {
+    font-family: "'Futura'", sans-serif;
+}
+
+.header_logo {
+    position: absolute;
+    top: 66px;
+    left: 133px;
+    width: 223px;
+    height: 46px;
+}
+
+.logo_item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 46px;
+    color: #000000;
+}
+
+.header_navigation {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 80px;
+    left: 481px;
+    width: 82px;
+    height: 26px;
+}
+
+.navigation_item {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 127.9%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-right: 40%;
+    color: #000000;
+}
+
+.navigation_item:hover {
+    font-weight: 800;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 5px;
+}
+
+.header_cart {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 66px;
+    right: 135px;
+    width: 240px;
+    height: 45px;
+}
+
+.cart_counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    border: 2px solid #000000;
+    margin-right: 21px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.counter_text {
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.cart_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 52px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+}
+
+.cart_button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.button_text {
+    text-align: center;
+    font-size: 20px;
+}
