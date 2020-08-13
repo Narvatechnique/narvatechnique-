@@ -1,0 +1,119 @@
+@mixin pad_1 ($f){
+	$f / 2601px * 100%;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+	header {
+ 		height: 179px / 2601px * 100%;
+ 		width: 100%;
+ 		display: flex;
+ 		justify-content: center;
+ 		font-family: "Futura";
+		font-weight: 500;
+
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			// background-color: #FFDFDB;
+			width: 1652px / 1920px * 100%; 
+			height: 100%;
+
+
+		
+
+			.main {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 565px / 1652px * 100%;
+				// background-color: black;
+				// color: red;
+
+
+				.Vitamiinpunkt {
+					margin-right: 10px;
+
+
+				}
+
+				.glavnaya_magazin {
+					display: flex;
+					justify-content: space-between;
+					// background-color: yellow;
+					width: 214px / 564px * 100%;
+					margin: 0 10px;
+
+					.magazin {
+						margin: 0 10px;
+						border-bottom: 2px solid #f00; 
+					}
+
+					.glavnaya {
+						margin: 0 10px;
+					}
+
+
+				}
+						
+			}
+
+			.bascket {
+				width: 235px / 1920px * 100%; 
+				// background-color: red;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 2px;
+				
+				.bascket__null {
+					// width: 49px / 235px * 100%;
+					display:flex;
+					justify-content: center;
+					align-items: center;
+					min-height: 35px;
+					min-width: 35px;
+					background-color: black;
+					border-radius: 50%;
+					color: #fff;
+					font-size: 16px;
+					text-align: center;
+					margin: 0 10px;
+
+				}
+
+				.bascketname {
+					border: 2px solid black;
+					padding: 8px 14px;
+					margin-left: 5px;
+					border-radius: 30% / 50%;
+				}
+			}			
+		}
+	}
+	
+	
+	.top {
+		height: 657px / 2601px * 100%;
+		// background-color: yellow;
+	}
+
+	.bottom {
+		height: 1297px / 2601px * 100%;
+		// background-color: red;
+	}
+
+	footer {
+		height: 468px / 2601px * 100%;
+		// background-color: black;
+	}
+
+
+
+
