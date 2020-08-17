@@ -24,6 +24,10 @@
 		margin: 0px 20px;
 	}
 
+	&__link {
+		color: #000;
+	}
+
 	&__cart-block {
 		display: flex;
 		margin: auto 0px auto auto;
@@ -40,6 +44,7 @@
 	}
 
 	&__bucket {
+		color: #000;
 		border: 3px solid #000;
 		border-radius: 30px;
 		padding: 15px 40px;
