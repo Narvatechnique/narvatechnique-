@@ -1,8 +1,20 @@
+.Resolution{
+    position: relative;
+    width: 1920px;
+    height: 2601px;
+    
+    background: #FFFFFF;
+}
 .body{
     position: relative;
     font-family: 'Futura';
     display: flex;
     flex-wrap: nowrap;
+
+    width: 1652px;
+    height: 54px;
+    left: 133px;
+    top: 66px;
 }
 .Vitamin{
     position: absolute;
