@@ -1,0 +1,246 @@
+$pad_1: 6.9%;
+$sto: 100%;
+$col1: #000;
+$col2: #fff;
+$col3: #7F7F7F;
+$col4: #5E5E5E;
+.pad1 {
+	padding: 0.6% 0;
+}
+
+.pad2 {
+	padding-bottom: 0.7%;
+}
+
+@mixin a_1 ($color1){
+	a {
+	text-decoration: none;
+	color: $color1;
+	}
+}
+
+@mixin footmix ($color1) {
+	@extend	.pad2;
+	@include a_1 ($color1);
+	}
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+html{
+	height:100%;
+	width:100%;
+}
+
+body {
+display:flex;
+flex-direction: column;
+height:100%;
+width:100%;
+}
+
+
+	header {
+ 		height: 179px / 2601px * 100%;
+ 		width: 100%;
+ 		display: flex;
+ 		justify-content: center;
+ 		font-family: "Futura";
+		font-weight: 500;
+
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			// background-color: #FFDFDB;
+			width: 1652px / 1920px * 100%; 
+			height: 100%;
+
+
+		
+
+			.main {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 565px / 1652px * 100%;
+				// background-color: black;
+				// color: red;
+
+
+				.Vitamiinpunkt {
+					margin-right: 10px;
+					@include a_1 ($col1);
+
+				}
+
+				.glavnaya_magazin {
+					display: flex;
+					justify-content: space-between;
+					// background-color: yellow;
+					width: 214px / 564px * 100%;
+					margin: 0 10px;
+
+					.magazin {
+						margin: 0 10px;
+						border-bottom: 2px solid #f00;
+						@include a_1 ($col1);
+					}
+
+					.glavnaya {
+						margin: 0 10px;
+						@include a_1 ($col1);
+					}
+
+
+				}
+						
+			}
+
+			.bascket {
+				width: 235px / 1920px * 100%; 
+				// background-color: red;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 2px;
+				
+				.bascket__amount {
+					// width: 49px / 235px * 100%;
+					display:flex;
+					justify-content: center;
+					align-items: center;
+					min-height: 35px;
+					min-width: 35px;
+					background-color: black;
+					border-radius: 50%;
+					color: #fff;
+					font-size: 16px;
+					text-align: center;
+					margin: 0 10px;
+
+
+				}
+
+				.bascketname {
+					border: 2px solid black;
+					padding: 8px 14px;
+					margin-left: 5px;
+					border-radius: 30% / 50%;
+					@include a_1 ($col1);
+				}
+			}			
+		}
+	}
+	
+	
+	.top {
+		height: 657px / 2601px * 100%;
+
+	}
+
+	.bottom {
+		height: 1297px / 2601px * 100%;
+
+	}
+
+	footer {
+		height: 468px / 2601px * 100%;
+		background-color: black;	
+		// height: 468px;
+		width: 100%;
+
+		.footwrapper {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+
+		.gridfoot {
+			color: white;
+			margin-left: 136px / 1920px * 100%;
+			margin-top: 1.23%;
+			margin-bottom: 1%;
+			width: 1736px / 1920px * 100%;
+			display: grid;
+			grid-template-columns: 423px/1736px*100% repeat(3, 1fr);
+			grid-template-rows:  repeat(3, 1fr);
+			flex: 1 1 auto;
+
+			.vitamiin {
+				grid-row: 1 / 4;
+				// @extend	.pad2;
+				// @include a_1 ($col2);
+				@include footmix ($col2);
+			}
+
+			.social {
+				// @extend	.pad2;
+				// @include a_1 ($col2);
+				@include footmix ($col2);
+			}
+
+			.adress {
+				@include footmix ($col2);
+			}
+
+			.contact {
+				@include footmix ($col2);
+			}
+
+			.facebook {
+				@include footmix ($col2);
+			}
+			.Astri {
+				@include footmix ($col2);
+			}
+			.tel {
+				@include footmix ($col2);
+			}
+			.instagram {
+				@include footmix ($col2);
+			}
+			.fama {
+				@include footmix ($col2);
+			}
+			.email {
+				@include footmix ($col2);
+			}
+
+		}
+
+		.footbottom {
+			border-top: 2px solid #808080;
+			width: 1654px / 1920px * 100%;
+			height: 147px / 468px * 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			
+			.narvatechnique {
+				color: $col2;
+			}
+
+			.right_bottom {
+				display: flex;
+				justify-content: space-between;
+				width: 400px / 1654px * 100%;
+				
+			}
+				.Confidentiality {
+					@include a_1 ($col3);
+				}
+				.terms {
+					@include a_1 ($col3);
+				}
+		}
+		}
+	}
+
+
+
+

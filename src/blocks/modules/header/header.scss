@@ -1,11 +1,48 @@
-@mixin pad_1 ($f){
-	$f / 2601px * 100%;
+$pad_1: 6.9%;
+$sto: 100%;
+$col1: #000;
+$col2: #fff;
+$col3: #7F7F7F;
+$col4: #5E5E5E;
+.pad1 {
+	padding: 0.6% 0;
 }
+
+.pad2 {
+	padding-bottom: 0.7%;
+}
+
+@mixin a_1 ($color1){
+	a {
+	text-decoration: none;
+	color: $color1;
+	}
+}
+
+@mixin footmix ($color1) {
+	@extend	.pad2;
+	@include a_1 ($color1);
+	}
 
 *{
 	padding: 0;
 	margin: 0;
 	border: 0;
+}
+
+*{padding: 0;margin: 0;border: 0;}
+
+html{
+	height:100%;
+	width:100%;
+}
+
+
+body {
+display:flex;
+flex-direction: column;
+height:100%;
+width:100%;
 }
 
 	header {
@@ -21,7 +58,6 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			// background-color: #FFDFDB;
 			width: 1652px / 1920px * 100%; 
 			height: 100%;
 
@@ -33,30 +69,30 @@
 				justify-content: space-between;
 				align-items: center;
 				width: 565px / 1652px * 100%;
-				// background-color: black;
-				// color: red;
+			
 
 
 				.Vitamiinpunkt {
 					margin-right: 10px;
-
+					@include a_1 ($col1);
 
 				}
 
 				.glavnaya_magazin {
 					display: flex;
 					justify-content: space-between;
-					// background-color: yellow;
 					width: 214px / 564px * 100%;
 					margin: 0 10px;
 
 					.magazin {
 						margin: 0 10px;
-						border-bottom: 2px solid #f00; 
+						border-bottom: 2px solid #f00;
+						@include a_1 ($col1);
 					}
 
 					.glavnaya {
 						margin: 0 10px;
+						@include a_1 ($col1);
 					}
 
 
@@ -66,14 +102,12 @@
 
 			.bascket {
 				width: 235px / 1920px * 100%; 
-				// background-color: red;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 				padding: 2px;
 				
-				.bascket__null {
-					// width: 49px / 235px * 100%;
+				.bascket__amount {
 					display:flex;
 					justify-content: center;
 					align-items: center;
@@ -86,6 +120,7 @@
 					text-align: center;
 					margin: 0 10px;
 
+
 				}
 
 				.bascketname {
@@ -93,27 +128,8 @@
 					padding: 8px 14px;
 					margin-left: 5px;
 					border-radius: 30% / 50%;
+					@include a_1 ($col1);
 				}
 			}			
 		}
 	}
-	
-	
-	.top {
-		height: 657px / 2601px * 100%;
-		// background-color: yellow;
-	}
-
-	.bottom {
-		height: 1297px / 2601px * 100%;
-		// background-color: red;
-	}
-
-	footer {
-		height: 468px / 2601px * 100%;
-		// background-color: black;
-	}
-
-
-
-
