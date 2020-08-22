@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
+        <!-- <title>gulp-scss-starter</title> -->
+        <title>Vitamiinipunkt</title>
         <meta name="theme-color" content="#fff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -26,9 +27,26 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container"> <!--  Зачем здесь container?  
+        контейнер должен быть только внунти секций, то есть 
+            body
+                header
+                    container 
+                    ...
+                main
+                    container 
+                    ...
+                footer
+                    container
+                    ...    
+    
+    -->
             @@include("../blocks/modules/header/header.html")
-            <main>
+            <main> <!-- Зачем здесь main-->
+                <!-- Этот файл не нужно трогвать, последние 2 инклуда также не нужны
+                Ты создаешь компонент main и только его подключаешь 
+            всё что должно быть здесь это 3 инклуда: header, main, footer
+         -->
                 @@include("../blocks/modules/banner/banner.html")
                 @@include("../blocks/modules/search/search.html")
             </main>

@@ -1,13 +1,15 @@
 .footer {
 	&__body {
-		background-color: #000;
+		background-color: #000; // это должно быть в .footer
 		color: #FFF;
-		padding: 0px 130px 60px 130px;
+		padding: 0px 130px 60px 130px; // нижний и верхний отступ должен быть в .footer для остальных есть container
 		font-family: "Futura";
 	}
 
 	&__vitaminiipunkt-info {
 		display: flex;
+		// align-items: baseline; чтобы весь контент был прижат к самому верху и не нужны будут линшие маржыны
+		// padding-bottom: 90px;
 		border-bottom: 2px solid #808080;
 	}
 
@@ -15,22 +17,29 @@
 		font-weight: 500;
 		font-size: 35px;
 		margin-right: 200px;
-		margin-top: 70px;
-		margin-bottom: 200px;
+		margin-top: 70px; // зачем? смотри выше
+		margin-bottom: 200px; // зачем? смотри выше
 	}
 
+	// так никогда не далай, помнишь БЭМ? если элементы на сайте похожи значит это 1 и тот же компонент, пишешь каждому общий класс и ему уже прописываешь стили
 	&__social-networks, &__places-addresses, &__contacts {
 		display: flex;
 		flex-direction: column;
 		font-family: "Arial";
-		margin-top: 80px;
+		margin-top: 80px;  // зачемм? вместо этого падинг топ у футера
 	}
 
+	// Помнишь как нужно правильно писать класс модификатора по ЬЭМ? 
+	// Класс__элемент_модификатор и имя модификаторы должно говорить о том, чем он отличается
+	// в данном случае эт отступы вправо
 	&__social-networks {
 		margin-right: 230px;
 	}
 
 
+	// Помнишь как нужно правильно писать класс модификатора по ЬЭМ? 
+	// Класс__элемент_модификатор и имя модификаторы должно говорить о том, чем он отличается
+	// в данном случае эт отступы вправо
 	&__places-addresses {
 		margin-right: 250px;
 	}
@@ -49,6 +58,10 @@
 
 	&__list-item {
 		margin-bottom: 30px;
+		// обнуляй отступы последнего элемента
+		// &:last-child {
+		// 	margin-bottom: 0;
+		// }
 	}
 
 	&__link {
@@ -58,28 +71,36 @@
 
 	&__narvatechnique-info {
 		display: flex;
+		// align-items: center; выравнивание вертикально
 	}
 
 	&__firm-name {
 		font-weight: 500;
 		font-size: 24px;
-		margin-top: 50px;
+		margin-top: 50px; // padding-top: 50px; у родителя вметсо этого 
 	}
 
+	// название класса должно быть понятным, чтобы читающий не гадал что означают эти буквы
 	&__nav-pos-end {
 		margin: 50px 0px 0px auto;
+		// margin-left: auto; достаточно
 	}
 
 	&__list-row {
 		display: flex;
 		flex-direction: row;
-		margin-left: auto;
+		margin-left: auto; // зачем? абсолютно ничего не далет
 	}
 
 	&__list-element {
 		margin-left: 60px;
+		// margin-right: 60px;
+		// &:last-child {
+		// 	margin-right: 0;
+		// }
 	}
-
+	// так никогда не далай, помнишь БЭМ? если элементы на сайте похожи значит это 1 и тот же компонент, пишешь каждому общий класс и ему уже прописываешь стили
+	// Помнишь как нужно правильно писать класс модификатора по ЬЭМ? 
 	&__link-confidentiality, &__link-terms {
 		color: #7F7F7F;
 		font-size: 24px;

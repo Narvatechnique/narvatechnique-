@@ -1,17 +1,26 @@
 .header {
+	// отступы от начала (самого верха) шапки до контента (лого, навигация и тд) и отступы от контента до конца шапки (самого низа)
+	// задаются паддингами, это отступы внутри секции header
 	&__body {
 		display: flex;
-		margin-bottom: 60px;
+		// align-items: center; чтоды весь контент в ыровнялся в 1 линию вертикально
+		// погугли про выравниевание на flex box
+		margin-bottom: 60px; // смотри коменты выше, это лишнее
 	}
 
 	&__title {
-		margin: auto 100px auto 0px;
+		margin: auto 100px auto 0px; // зачем margin во все стороны?
+		// здесь нужен только margin-right : отступ до nav
+		// смотри выше про выравнивание
 		font-weight: 500;
 		font-size: 35px;
 	}
 
 	&__nav {
 		margin: auto 0px;
+		// зачем margin во все стороны?
+		// здесь нужен только margin-right
+		// смотри выше про выравнивание
 	}
 
 	&__list {
@@ -22,6 +31,13 @@
 
 	&__list-item {
 		margin: 0px 20px;
+		// опять, зачем margin во все стороны
+		// отступ от "Главная" до "магазин" 39 ~ 40px  
+		// так и пишешь margin-right: 40px; , но у последнего нужно уьрать margin-right, тк он не нужен
+		// так и пишешь:
+		// &:last-child {
+		// 	margin-right: 0;
+		// }
 	}
 
 	&__link {
@@ -30,14 +46,21 @@
 
 	&__cart-block {
 		display: flex;
-		margin: auto 0px auto auto;
+		margin: auto 0px auto auto; // достаточно одного margin-left: auto;
 		font-weight: 500;
 		font-size: 20px;
 	}
 
 	&__counter {
 		margin: auto 20px auto 0px;
-		padding: 15px 20px;
+		padding: 15px 20px; // паддинги здесь совсем не нужны
+		// измени число например на 100 и поймешь почему
+		// правильно будет сделать следующим образом:
+		    // display: flex; 
+		    // align-items: center; выравниваем по центру вертикально
+		    // justify-content: center; и горизонтально 
+		    // width: 50px;
+			// height: 50px;
 		background-color: #000;
 		color: #FFF;
 		border-radius: 50%;
@@ -48,8 +71,19 @@
 		border: 3px solid #000;
 		border-radius: 30px;
 		padding: 15px 40px;
+		// вот уже в этом случае можно через падинги, либо тем же вариантом что я написал в counter
 	}
 }
+
+
+// почему это не в файле _link.scss ?
+// в данном случае стоило бы сделать через всевдоэлемент after
+// задать ему position: absolute
+// bottom: -5px;
+// height: 2px;
+// left: 0;
+// right: 0;
+// left: 0 и right: 0 растянет линию на всю ширину родителя
 
 .link_active {
 	font-weight: bold;
